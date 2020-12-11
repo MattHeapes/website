@@ -1,0 +1,425 @@
+/**
+ * This is my CSS style sheet for my portfolio website. 
+ * This is a project to fulfill the final site requirements 
+ * for WEB 110 and WEB 114. It is a living portfolio that 
+ * includes a section of research on media literacy.
+ * @author: Matt Heapes
+ * @version: December 2, 2020
+ **/
+
+*
+		{
+			box-sizing: border-box;
+		}
+        
+#wrapper
+        {
+            background-color: #171c28;
+            background-image: linear-gradient(to bottom, #2f3b54, #171c28);
+			background-repeat: no-repeat;
+			margin: .25rem .25rem .25rem .25rem;
+			
+        }
+
+body
+		{
+			background-color: #171c28;
+			background-repeat: no-repeat;
+			color: #5ccfe6;
+			font-family: Arial, Helvetica, sans-serif;
+			margin: 0 0 0 0;
+        }
+        
+header
+		{
+			
+			background-color: #2f3b54;
+			border: #8695b7 solid 2px;
+			color: #FFFFFF;
+			text-align: center;
+			margin: .25rem .25rem .25rem .25rem;
+		}
+
+header a
+		{
+			text-decoration: none;
+		}
+
+header a:link {color: #5ccfe6;}
+
+header a:visited {color: #5ccfe6;}
+
+header a:hover{color: #00ffff;}
+
+.navBar
+		{
+			font-weight: bold;
+			font-family: 'Quicksand', sans-serif;
+			font-size: 100%;
+			text-align: left;
+			position: absolute;
+			top: 0;
+			left: auto;
+			background: #6679a4;
+			border: #ffae57 solid 5px;
+			width: 100vw;
+			height: auto;
+			overflow: hidden;
+			color: #171c28;
+			transform: translateY(-100%);
+			transition: transform 0.2s ease;
+		}
+.showNav 
+		{
+  			transform: translateY(3%);
+		}
+
+nav a
+		{
+			text-decoration: none;
+		}
+
+nav a:link {color: #171c28;}
+
+nav a:visited {color: #344873;}
+
+nav a:hover{color: #ef6b73;}
+
+nav ul
+		{
+			margin: 0 0 0 0;
+			padding-left: 0;
+			font-size: 1rem;
+			list-style-type: none;
+		}
+
+nav li
+		{
+			padding: .5em .2em .5em 1em;
+			border-bottom: #171c28 solid 1px;
+		}
+
+h1
+		{
+			font-family: 'Righteous', cursive;
+			font-size: 2.5rem;
+			letter-spacing: 0;
+			margin-bottom: 0;
+			margin-top: 0;
+			text-align: left;
+			padding-left: .25em;
+		}
+
+#helloThere
+			{
+				color: #ef6b73;
+				padding-left: 2rem;
+				padding-top: 1rem;
+			}
+.burgerContainer
+		{
+			padding: 2px 6px 2px 6px;
+			position: absolute;
+			cursor: pointer;
+			z-index: -1;
+			top: 1.5rem;
+			right: 12vw;
+			border: #ffae57 solid 3px;
+			background-color: transparent;
+			transform: scale(90%);
+			opacity: 0;
+			transition: transform .4s ease;
+		}
+
+.bar1, .bar2, .bar3 
+		{
+			width: 30px;
+			height: 4px;
+			background-color: #ffae57;
+			margin: 6px 0;
+			opacity: 80%;
+			transition: 0.4s ease;
+			
+			
+		}
+
+.burgerContainer:hover 
+		{
+			opacity: 100%;
+			transform: scale(100%);
+			transition: transform 0.4s ease;
+		}
+.menuButt{		
+			position: absolute;
+			z-index: 1000;
+			top: 20px;
+			right: 20px;
+			width: auto;
+			height: auto;
+			opacity: 60%;
+			color: #ffae57;
+			border: #ffae57 solid 2px;
+			font-size: 1em;
+			margin-top: 0%;
+			margin-bottom: 0%;
+			background-color: transparent;
+			background-size: 100%;
+			transform: scale(100%);
+			transition: transform 0.2s ease;
+		}
+.menuButtHover
+		{
+			opacity: 100%;
+			transform: scale(110%);
+			transition: transform 0.2s ease;
+		}
+.menuButtClose
+		{
+			color: #171c28;
+			border-color: #171c28;
+			
+		}
+/* Rotate first bar */
+.change .bar1 
+		{
+			transform: translate( 0, 10px) rotate(-405deg);
+			
+		}
+
+/* Fade out the second bar */
+.change .bar2 
+		{
+  			opacity: 0;
+		}
+
+/* Rotate last bar */
+.change .bar3 
+		{
+			transform: translate(0, -10px) rotate(405deg);	
+		}
+
+
+.headShot
+		{
+			
+			float:left;
+			/* background-image: url("../portfolio/images/head_shot.png"); */
+			height: auto;
+			width: 275px;
+			border: #8695b7 solid 2px;
+			margin: .25rem .25rem .25rem .25rem; 
+			background-size: contain;
+			background-repeat: no-repeat;
+			transition: all .2s ease;
+		}
+
+
+
+.socialIcons ul
+		{
+			list-style-type: none;
+			margin-top: 0;
+			color: #ef6b73;
+			font-size: 2.5rem;
+			padding-top: 2rem;
+		}
+
+.socialIcons span
+		{
+			margin-left: 2.5rem;
+			margin-top: .9rem;
+			margin-bottom: .9rem;
+			
+		}
+
+.socialIcons li a:link, .socialIcons svg {color: #5ccfeb;}
+
+.socialIcons li a:visited, .socialIcons svg  {color: #5ccfeb;}
+
+.socialIcons li a:hover, .socialIcons svg
+		{
+			color: #ef6b73;
+		}
+
+p
+		{
+			color: #5ccfe6;
+		}
+
+footer
+		{
+			margin: 4rem auto auto;
+			width: 80%;
+			height: auto;
+			text-align: center;
+			position: relative;
+			bottom:10%;
+
+		}
+
+#ReadMore a:link {color: #c3a6ff;}
+#ReadMore a:visited {color: #c3a6ff;}
+#ReadMore a:hover {color: #ef6b73;}
+
+
+@media (min-width: 700px) { /* Medium Layout */
+	
+	.menuButt
+			{
+				opacity: 0;
+			}
+	#bigWrapper
+			{
+				margin: auto;
+				width: 80%;
+				display: grid;
+				grid-template-columns: 1.5fr 1fr 3fr;
+				grid-template-rows: 6.5rem 3fr;
+			}
+	
+	header
+			{
+				grid-column: 1/4;
+				grid-row: 1/2;
+	 		}
+			
+	h1
+			{
+				padding-left: 2rem;
+				font-size: 4em;
+			}
+	#wrapper
+			{
+				grid-column: 1 / 4;
+				grid-row: 2 / 3;
+				
+			}
+	
+	#welcomeP
+			{
+				font-family: 'Quicksand', sans-serif;
+				size: 1rem;
+			}
+
+	.burgerContainer
+			{
+				z-index: 1000;
+				opacity: 80%;
+			}
+	
+	.menuButt
+			{
+				z-index: -1;
+			}
+	.navBar
+			{
+				width: 15rem;
+				position: absolute;
+				right: 15rem;
+			}
+	nav ul
+			{
+				font-size: 1.5rem;
+			}
+
+	.showNav
+			{
+				transform: translateY(20%);
+			}
+	main
+			{
+				display: grid;
+				grid-template-columns: 25vw .25fr 3fr;
+				grid-template-rows: 80vh;	
+
+			}
+	.headShot
+			{
+				grid-column: 1 / 2;
+				grid-row: 1 / 2;
+				max-width: 24vw;
+				width: auto;
+			}
+	
+	.socialIcons
+			{
+				
+				grid-column: 2/3;
+				grid-row: 1/2;
+				/* flex: 1; */
+				max-width: 74px;
+				
+			}
+	.socialIcons ul 
+			{
+				
+				padding: 3vh 0 0 0;
+				max-width:74px;
+				font-size: 4vw;
+			}	
+	.socialIcons li
+			{
+				
+				padding-top: 1vh;
+				padding-bottom: 1vh;
+			}
+	
+	#helloThere
+			{
+				grid-column: 3 / 4;
+				grid-row: 1 / 2;
+				color: #ef6b73;
+				padding-left:5vw;
+				padding-top: 0;
+				max-height: 420px;
+			}
+	h2
+			{
+				margin-top: 0;
+				color: #ef6b73;
+				padding-top: 0;
+				size: 2rem;
+			}
+	p
+			{
+				color: #5ccfe6;
+				padding-left: 1rem;
+				padding-right: 2rem;
+				font-size: 1.5rem;
+			}
+
+	footer
+			{
+				grid-column: 1 / 4;
+				width: 100%;
+			}
+
+	h2
+			{
+				padding-top: 1rem;
+				font-size: 3rem;
+			}
+
+	
+	
+	
+
+	
+}/*End Medium Layout*/
+
+@media (min-width: 1024px) { /* Large Layout */ 
+	
+	#bigwrapper
+			{
+			 width: 75%;
+
+			}
+
+	#helloThere
+
+			{
+				padding-top: 15vh;
+
+			}
+ 
+}/*End Large Layout*/
