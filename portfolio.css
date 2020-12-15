@@ -38,6 +38,7 @@ header
 			color: #FFFFFF;
 			text-align: center;
 			margin: .25rem .25rem .25rem .25rem;
+			
 		}
 
 header a
@@ -59,10 +60,11 @@ header a:hover{color: #00ffff;}
 			text-align: left;
 			position: absolute;
 			top: 0;
-			left: auto;
+		
+			
 			background: #6679a4;
 			border: #ffae57 solid 5px;
-			width: 100vw;
+			width: 98vw;
 			height: auto;
 			overflow: hidden;
 			color: #171c28;
@@ -72,7 +74,7 @@ header a:hover{color: #00ffff;}
 .showNav 
 		{
 			  
-			transform: translateY(10vh);
+			transform: translateY(4rem);
 		}
 
 nav a
@@ -122,13 +124,13 @@ h1
 			padding: 2px 6px 2px 6px;
 			position: absolute;
 			cursor: pointer;
-			z-index: -1;
-			top: 1.5rem;
-			right: 12vw;
+			z-index: 1000;
+			top: 1.2vh;
+			right: 3vw;
 			border: #ffae57 solid 3px;
 			background-color: transparent;
-			transform: scale(90%);
-			opacity: 0;
+			transform: scale(80%);
+			opacity: 80%;
 			transition: transform .4s ease;
 		}
 
@@ -150,7 +152,7 @@ h1
 			transform: scale(100%);
 			transition: transform 0.4s ease;
 		}
-.menuButt{		
+/* .menuButt{		
 			position: absolute;
 			z-index: 1000;
 			top: 20px;
@@ -179,7 +181,7 @@ h1
 			color: #171c28;
 			border-color: #171c28;
 			
-		}
+		}*/
 /* Rotate first bar */
 .change .bar1 
 		{
@@ -206,12 +208,14 @@ h1
 			float:left;
 			/* background-image: url("../portfolio/images/head_shot.png"); */
 			height: auto;
-			width: 275px;
+			width: 235px;
+			
 			border: #8695b7 solid 2px;
 			margin: .25rem .25rem .25rem .25rem; 
 			background-size: contain;
 			background-repeat: no-repeat;
-			transition: all .2s ease;
+			
+			margin: 1rem 1rem;
 		}
 
 
@@ -227,7 +231,7 @@ h1
 
 .socialIcons span
 		{
-			margin-left: 2.5rem;
+			margin-left: 1.5rem;
 			margin-top: .9rem;
 			margin-bottom: .9rem;
 			
@@ -265,17 +269,17 @@ footer
 
 @media (min-width: 700px) { /* Medium Layout */
 	
-	.menuButt
+	/* .menuButt
 			{
 				opacity: 0;
-			}
+			} */
 	#bigWrapper
 			{
 				margin: auto;
 				width: 80%;
 				display: grid;
-				grid-template-columns: 1.5fr 1fr 3fr;
-				grid-template-rows: 6.5rem 3fr;
+				grid-template-columns: 95% 5%;
+				grid-template-rows: 6.5rem 3fr 6.5rem;
 			}
 	
 	header
@@ -304,8 +308,13 @@ footer
 
 	.burgerContainer
 			{
-				z-index: 1000;
-				opacity: 80%;
+				position: relative;
+				grid-row: 1 / 2;
+				grid-column: 2 / 3;
+				margin-top: 1rem;
+				
+				height: 48px;
+				width: 48px;
 			}
 	
 	.menuButt
@@ -316,7 +325,7 @@ footer
 			{
 				width: 15rem;
 				position: absolute;
-				right: 12vw;
+				right: 15%;
 			}
 	nav ul
 			{
@@ -325,7 +334,7 @@ footer
 
 	.showNav
 			{
-				transform: translateY(13vh);
+				transform: translateY(5rem);
 			}
 	main
 			{
@@ -339,6 +348,7 @@ footer
 			{
 				grid-column: 1 / 2;
 				grid-row: 1 / 2;
+				min-width: 200px;
 				max-width: 24vw;
 				width: auto;
 			}
@@ -364,7 +374,9 @@ footer
 				
 				padding-top: 1vh;
 				padding-bottom: 1vh;
+				margin-left: 2.5rem;
 			}
+	
 	
 	#helloThere
 			{
@@ -394,6 +406,7 @@ footer
 	footer
 			{
 				grid-column: 1 / 4;
+				grid-row: 3 /4;
 				width: 100%;
 			}
 
