@@ -18,10 +18,12 @@
 		<link rel="stylesheet" href="portfolio.css" type="text/css">
 		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 		<script src="https://kit.fontawesome.com/6442426386.js" crossorigin="anonymous"></script>
+		<script src="main.js"></script>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link
 			href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Architects+Daughter&family=Monoton&family=Montserrat&family=Nerko+One&family=Open+Sans&family=Poiret+One&family=Press+Start+2P&family=Quicksand&family=Righteous&family=Shadows+Into+Light&display=swap"
 			rel="stylesheet">
+		
 		<title>Matt Heapes</title>
 	</head>
 	
@@ -42,38 +44,43 @@
 				<nav class="navBar">
 					<ul>
 						<li class="menuItem"><a class="menuLink" href="index.html">Home</a></li>  
-						<li class="menuItem"><a class="menuLink" href="../portfolio/images/Heapes.Resume.8.1.19.pdf">Resume</a></li>
+						<li class="menuItem"><a class="menuLink" href="images/Heapes.Resume.8.1.19.pdf">Resume</a></li>
 						<li class="menuItem"><a class="menuLink" href="contactMe.html">Contact</a></li>
 					</ul>
 				</nav> <!-- Navigation Bar --> 
 				<main>
-					<div class="headWrap">
-						<img class="headShot" src="../portfolio/images/Head_Shot_Styled.png" alt="Head shot of Matt." >
-					</div><!--Head Shot Image-->
-					<div class="socialIcons">
-						<ul id="iconList">
-							<li class="socialIcon">
-								<a href="https://www.facebook.com/mtheapes">
-									<span class="fab fa-facebook"></span>
-								</a>
-							</li>
-							<li class="socialIcon">
-								<a href="https://www.instagram.com/theheapes/">
-									<span class="fab fa-instagram"></span>
-								</a>
-							</li>
-							<li class="socialIcon">
-								<a href="https://twitter.com/MHeapes">
-									<span class="fab fa-twitter"></span>
-								</a>
-							</li>
-							<li class="socialIcon">
-								<a href="https://www.linkedin.com/in/mattheapes/">
-									<span class="fab fa-linkedin"></span>
-								</a>
-							</li>
-						</ul><!-- End <ul> class="iconList" -->
-					</div><!--End of Social Icons -->
+					<div id="headAndSocialWrap">
+						<!--Wrap around headshot and social icons-->
+						<div class="headWrap">
+							<img class="headShot" src="images/Head_Shot_Styled.png" alt="Head shot of Matt.">
+							</div>
+							<!--Head Shot Image End of headWrap div-->
+						<div class="socialIcons">
+							<ul id="iconList">
+								<li class="socialIcon">
+									<a href="https://www.facebook.com/mtheapes">
+										<span class="fab fa-facebook"></span>
+									</a>
+								</li>
+								<li class="socialIcon">
+									<a href="https://www.instagram.com/theheapes/">
+										<span class="fab fa-instagram"></span>
+									</a>
+								</li>
+								<li class="socialIcon">
+									<a href="https://twitter.com/MHeapes">
+										<span class="fab fa-twitter"></span>
+									</a>
+								</li>
+								<li class="socialIcon">
+									<a href="https://www.linkedin.com/in/mattheapes/">
+										<span class="fab fa-linkedin"></span>
+									</a>
+								</li>
+							</ul><!-- End <ul> class="iconList" -->
+						</div><!--End of Social Icons -->
+						</div>
+						<!--End headAndSocialWrap-->
 					<div id="helloThere">
 						<h2>Welcome.</h2>
 						<p id="welcomeP">
@@ -106,7 +113,7 @@
 						</p>
 					</div><!-- End HelloThere -->
 				</main>
-				<script src="main.js"></script>
+				
 			</div>	<!--End of Wrapper-->
 			<footer>
 				Copyright &copy; 2020 Matt Heapes<br><a href="mailto:mheapes@stumail.jccc.edu">matt@heapes.com</a>
