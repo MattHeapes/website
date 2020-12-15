@@ -21,34 +21,34 @@ console.log(myPowNum)
 
 let navBar = document.querySelector(".navBar");
 let ham = document.querySelector(".burgerContainer");
-let menuButt = document.querySelector(".menuButt");
+// let menuButt = document.querySelector(".menuButt");
 
 
 ham.addEventListener("click", toggleHamAndNav);
-menuButt.addEventListener("click", toggleMenuButt);
-menuButt.addEventListener("mouseover", menuButtFocusHandle);
-menuButt.addEventListener("mouseout", menuButtBlurHandle);
+// menuButt.addEventListener("click", toggleMenuButt);
+// menuButt.addEventListener("mouseover", menuButtFocusHandle);
+// menuButt.addEventListener("mouseout", menuButtBlurHandle);
 window.addEventListener("beforeunload", toggleButts);
 
 
-function toggleMenuButt() {
+/* function toggleMenuButt() {
     navBar.classList.toggle("showNav");
     menuButt.classList.toggle("menuButtClose");
-}
+} */
 
-function toggleButts() {
+/* function toggleButts() {
     navBar.classList.add("navBar");
     menuButt.classList.add("menuButt");
     ham.classList.toggle("change");
-}
+} */
 
-function menuButtFocusHandle() { 
+/* function menuButtFocusHandle() { 
     menuButt.classList.add("menuButtHover");
-}
+} */
 
-function menuButtBlurHandle() { 
+/* function menuButtBlurHandle() { 
     ham.classList.remove("menuButtHover");
-}
+} */
 
 function toggleHamAndNav() { 
     ham.classList.toggle("change");
