@@ -5,6 +5,8 @@
  **/
 "use strict";
 
+
+
 console.log("Hey look, I logged something to the console");
 console.log("Hey! Stop logging stuff to the console!!!");
 console.log("HACK" + " " + "THE" + " " + "PLANET!");
