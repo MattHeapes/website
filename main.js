@@ -1,8 +1,5 @@
 /**
  * This is the main.js file for my portfolio website. 
- * This is a project to fulfill the final site requirements 
- * for WEB 110 and WEB 114. It is a living portfolio that 
- * includes a section of research on media literacy.
  * @author: Matt Heapes
  * @version: December 2, 2020
  **/
@@ -10,7 +7,7 @@
 
 console.log("Hey look, I logged something to the console");
 console.log("Hey! Stop logging stuff to the console!!!");
-console.log("NEVER" + "STOP" + "LOGGING!");
+console.log("HACK" + " " + "THE" + " " + "PLANET!");
 
 if (!false && true) {
     let myNumberyNum = Math.max(12, 42, 42, 64, 113);
